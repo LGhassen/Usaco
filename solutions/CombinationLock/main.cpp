@@ -15,13 +15,13 @@ TASK: combo
 
 using namespace std;
 
-//Looking back maybe I could have brute+forced this
+//Looking back maybe I could have brute-forced this
 //At a maximum N=100, we would have 1 million combinations to try
 //For each combination we have to check every number is at +-2 of a combination number
 //This is more or less at the threshold of what is bruteforceable
 //
 //The solution here is analytical
-//Compute all possible combinations and substract overlapping numbers between combinations
+//Compute number of all possible combinations and substract overlapping numbers between combinations
 //Overlap is checked separately for each digit by the simple method of marking a bool array
 //Probably this could be replace by some if/else checks
 //But at N=100 this shouldn't be any different in speed and this is simpler
